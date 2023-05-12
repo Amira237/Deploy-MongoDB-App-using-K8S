@@ -18,7 +18,7 @@ spec:
       - name: mongodb
         image: mongo
         volumeMounts:
-        - mountPath: "/data"
+        - mountPath: "/data/db"
           name: logvolume
         ports:
         - containerPort: 27017
