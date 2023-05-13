@@ -1,4 +1,12 @@
 # Deploy-MongoDB-App-using-K8S
+## Prerequisites
+- Install a hypervisor in your local PC such as (VMware workstation , virtualbox) for windows
+- A Linux, macOS or Windows machine
+- At least 2 CPUs and 2 GB of RAM
+- Container runtime (Docker)
+- Install Minikube and Kubectl
+
+
 ## Here are the basic steps to deploy MongoDB and Mongo Express using Kubernetes:
 
 1. Create a ConfigMap to store the MongoDB configuration.
