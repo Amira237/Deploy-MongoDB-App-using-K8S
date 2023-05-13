@@ -15,7 +15,10 @@
 4. Create a ClusterIP Service to expose MongoDB within the cluster.
 5. Create a Deployment to run the Mongo Express pods.
 6. Create a NodePort Service to expose Mongo Express outside the cluster.
-7. Access the Mongo Express UI using the NodePort IP and port. You can then manage your database.
+7. Create a Presistance Volume (PV) for storing data independently of the pods in your Kubernetes cluster.
+8. Create a Presistance Volume Claim (PVC) to allow developers to dynamically request storage resources, without being aware of the implementation of underlying storage devices.
+9. Access the Mongo Express UI using the NodePort IP and port. You can then manage your database.
+
 
 In summary:
 
@@ -24,5 +27,7 @@ In summary:
 - Deployments for running pods
 - ClusterIP Service for internal access
 - NodePort Service for external access
+- PV for storing data
+- PVC to request storage resources
 - Initialize replica set after deploy
 - Access Mongo Express UI to manage database
